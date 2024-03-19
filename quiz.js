@@ -1,6 +1,6 @@
 //Even and Odd
 
-console.log("Answer1");
+console.log("Even Odd Problem 1");
 console.log("");
 
 function addEven(num) {
@@ -13,6 +13,8 @@ function addEven(num) {
 console.log(addEven(0));
 
 //Factorial
+console.log("Factorial Problem 2");
+console.log("");
 
 function factorial(num) {
   if (num > 1) {
@@ -22,9 +24,6 @@ function factorial(num) {
 }
 
 console.log(factorial(5));
-
-console.log("Answer2");
-console.log("");
 
 //Destructuring
 
@@ -40,14 +39,14 @@ let { name: name2, age: age2 } = people[1];
 
 let { name: name3, age: age3 } = people[2];
 
-console.log("Answer3");
+console.log("Destructuring Prolem 3");
 console.log("");
 
 console.log(`Name of first Person is ${name1} who is ${age1} years old`);
 console.log(`Name of Second Person is ${name2} who is ${age2} years old`);
 console.log(`Name of Third Person is ${name3} who is ${age3} years old`);
 
-console.log("Answer4");
+console.log("Reversing Problem 4");
 console.log("");
 
 //Reversing the String
@@ -59,9 +58,8 @@ for (i = string.length - 1; i >= 0; i--) {
 }
 console.log(reverse);
 
-console.log("Answer5");
+console.log("Sum of Array Prolem 5");
 console.log("");
-//Sum of the Array
 
 function sum(numbers) {
   let sum = 0;
@@ -76,7 +74,7 @@ console.log(sum(arr));
 
 //Problem 6
 
-console.log("Answer6");
+console.log("Largest element Problem 6");
 console.log("");
 
 const array = [3, 6, 2, 5, 8, 9, 4];
@@ -93,7 +91,7 @@ console.log("The largest element from the array is = ", temp);
 
 //Problem 7
 
-console.log("Answer7");
+console.log("Leap Year Problem 7");
 console.log("");
 
 function leapYear(value) {
@@ -110,7 +108,7 @@ leapYear(800);
 
 //Problem 8
 console.log("");
-console.log("Answer8");
+console.log("Fianocci Series Problem 8");
 console.log("");
 
 function fibanocci(series, index) {
@@ -130,7 +128,7 @@ console.log(series2);
 fibanocci(series2, 6);
 
 console.log("");
-console.log("Answer9");
+console.log("Wovels Counting Problem 9");
 console.log("");
 
 let String = "Pakistan is at the verge of choas";
@@ -154,12 +152,14 @@ console.log(String);
 console.log(wovels(String));
 
 console.log("");
-console.log("Answer10");
+console.log("Sorting Array Prolem 10");
 console.log("");
 
 //Problem 10
 
 const newArray = [2, 1, 4, 3, 5, 7, 8];
+console.log(newArray);
+
 let sorted = [];
 
 for (let i = 0; i <= newArray.length; i++) {
@@ -171,12 +171,13 @@ for (let i = 0; i <= newArray.length; i++) {
     }
   }
 }
+
 console.log(newArray);
 
 //Problem 11
 
 console.log("");
-console.log("Answer11");
+console.log("Capitalizing Problem 11");
 console.log("");
 
 let string1 = "pakistan is an asian country";
@@ -186,3 +187,73 @@ for (let i = 0; i < words.length; i++) {
   words[i] = words[i][0].toUpperCase() + words[i].substring(1);
 }
 console.log(words.join(" "));
+
+//Problem 12
+
+console.log("");
+console.log("Duplication Problem 12");
+console.log("");
+
+const duplicatedArr = [1, 4, 2, 7, 5, 1, 7];
+console.log(duplicatedArr);
+
+for (let i = 0; i < duplicatedArr.length - 1; i++) {
+  let number = duplicatedArr[i];
+  for (let j = i + 1; j < duplicatedArr.length; j++) {
+    if (number === duplicatedArr[j]) {
+      duplicatedArr.splice(j, 1);
+    }
+  }
+}
+console.log(duplicatedArr);
+
+console.log("");
+console.log("Palindrome 13");
+console.log("");
+
+function Palindrome(word) {
+  let backwardWord = "";
+  for (let i = word.length - 1; i >= 0; i--) {
+    backwardWord = backwardWord + word[i];
+  }
+  if (word === backwardWord) {
+    console.log("Its a Palindrome");
+  } else console.log("Its not a palindrome");
+}
+console.log("damad");
+Palindrome("damad");
+console.log("");
+console.log("hammad");
+Palindrome("Hammad");
+
+console.log("");
+console.log("Longest Word in String 14");
+console.log("");
+
+let line = "I am finding the largest word from the String";
+let stringWords = line.split(" ");
+let largestWord = stringWords[0];
+for (let i = 0; i <= stringWords.length - 1; i++) {
+  if (largestWord.length >= stringWords[i].length) {
+    largestWord = largestWord;
+  } else largestWord = stringWords[i];
+}
+console.log(line);
+console.log(largestWord);
+
+console.log("");
+console.log("Positive Integer Sum Problem 15");
+console.log("");
+
+function positveSum(num1, num2) {
+  if (num1 >= 0 && num2 >= 0) {
+    console.log("The sum of the numbers is =");
+    return num1 + num2;
+  }
+  return "One of the number is not positive";
+}
+
+console.log(5, 5);
+console.log(positveSum(5, 5));
+console.log(-5, 5);
+console.log(positveSum(-5, 5));
