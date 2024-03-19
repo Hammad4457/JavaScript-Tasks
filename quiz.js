@@ -68,14 +68,77 @@
 //Sum of the Array
 
 
-        function sum(){
+        function sum(numbers){
         let sum=0;
-            for(let i=0;i<arr.length-1;i++){
-                console.log(arr.length);
-                sum=sum+arr[i];
+            for(let i=0;i<=numbers.length-1;i++){
+       //         console.log(arr.length);
+                sum=sum+numbers[i];
             }
             return sum;
         }    
         const arr = [2,3,5,2,5];    
-        console.log(sum[arr]);
-    
+        console.log(sum(arr));
+     
+        //Problem 6
+
+        console.log("Answer6");
+            console.log("");
+
+            const array = [3,6,2,5,8,9,4];
+            let temp = array[0];
+            for(let i=0;i<=array.length-1;i++){
+                if(temp<array[i]){
+                    temp=array[i];
+                }
+                temp=temp;
+                }
+                console.log(array);
+                
+            console.log("The largest element from the array is = ",temp);
+
+            //Problem 7
+
+        console.log("Answer7");
+        console.log("");
+
+        function leapYear(value){
+            if(value % 4==0 && value % 100!=0){
+            console.log("Its a leap year");
+            }
+            else if(value % 4==0 && value % 100==0 && value % 400 == 0){
+                console.log("Its a leap year");
+            }
+            else
+            console.log("Its not a leap year");
+
+        }
+        console.log("Number is 600");
+        leapYear(600);
+        console.log("Number is 800");
+        leapYear(800);
+
+        //Problem 8
+        console.log("");
+        console.log("Answer8");
+        console.log("");
+
+        
+        function fibanocci(series,index){
+            
+                if(series[index] == series[index-1] +series[index-2]){
+                    console.log("Its a Fibanocci Series");
+                }
+                else
+                console.log("It's not a Fibanocci Series");
+            
+        }
+
+        const series1 = [0,1,1,2,3,5,8,13,21,34];
+        console.log(series1);
+        fibanocci(series1,6);
+
+        console.log("");
+
+        const series2 = [0,1,3,6,3,1,2,3,5,8,13,21,34];
+        console.log(series2);
+        fibanocci(series2,6);
