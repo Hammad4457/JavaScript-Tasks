@@ -13,6 +13,7 @@ function addEven(num) {
 console.log(addEven(0));
 
 //Factorial
+console.log("");
 console.log("Factorial Problem 2");
 console.log("");
 
@@ -46,6 +47,7 @@ console.log(`Name of first Person is ${name1} who is ${age1} years old`);
 console.log(`Name of Second Person is ${name2} who is ${age2} years old`);
 console.log(`Name of Third Person is ${name3} who is ${age3} years old`);
 
+console.log("");
 console.log("Reversing Problem 4");
 console.log("");
 
@@ -58,13 +60,13 @@ for (i = string.length - 1; i >= 0; i--) {
 }
 console.log(reverse);
 
+console.log("");
 console.log("Sum of Array Prolem 5");
 console.log("");
 
 function sum(numbers) {
   let sum = 0;
   for (let i = 0; i <= numbers.length - 1; i++) {
-    //         console.log(arr.length);
     sum = sum + numbers[i];
   }
   return sum;
@@ -74,6 +76,7 @@ console.log(sum(arr));
 
 //Problem 6
 
+console.log("");
 console.log("Largest element Problem 6");
 console.log("");
 
@@ -91,6 +94,7 @@ console.log("The largest element from the array is = ", temp);
 
 //Problem 7
 
+console.log("");
 console.log("Leap Year Problem 7");
 console.log("");
 
@@ -127,6 +131,7 @@ const series2 = [0, 1, 3, 6, 3, 1, 2, 3, 5, 8, 13, 21, 34];
 console.log(series2);
 fibanocci(series2, 6);
 
+//Problem 9
 console.log("");
 console.log("Wovels Counting Problem 9");
 console.log("");
@@ -151,11 +156,11 @@ function wovels(string) {
 console.log(String);
 console.log(wovels(String));
 
+//Problem 10
+
 console.log("");
 console.log("Sorting Array Prolem 10");
 console.log("");
-
-//Problem 10
 
 const newArray = [2, 1, 4, 3, 5, 7, 8];
 console.log(newArray);
@@ -207,6 +212,8 @@ for (let i = 0; i < duplicatedArr.length - 1; i++) {
 }
 console.log(duplicatedArr);
 
+//Problem 13
+
 console.log("");
 console.log("Palindrome 13");
 console.log("");
@@ -226,6 +233,8 @@ console.log("");
 console.log("hammad");
 Palindrome("Hammad");
 
+//Problem 14
+
 console.log("");
 console.log("Longest Word in String 14");
 console.log("");
@@ -240,6 +249,8 @@ for (let i = 0; i <= stringWords.length - 1; i++) {
 }
 console.log(line);
 console.log(largestWord);
+
+//Problem 15
 
 console.log("");
 console.log("Positive Integer Sum Problem 15");
