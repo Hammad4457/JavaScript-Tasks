@@ -142,3 +142,64 @@
         const series2 = [0,1,3,6,3,1,2,3,5,8,13,21,34];
         console.log(series2);
         fibanocci(series2,6);
+
+        console.log("");
+        console.log("Answer9");
+        console.log("");
+
+        let String = "Pakistan is at the verge of choas";
+        function wovels(string){
+            let count=0;
+            let newString=string.toLowerCase();
+            for(let i=0;i<newString.length;i++){
+                if(newString[i]=='a' || newString[i]=='e' || newString[i]=='i' || newString[i]=='o' || newString[i]=='u'){
+                    count++;
+                }
+            }
+            return count;
+        }
+        console.log(String);
+        console.log(wovels(String));
+
+        console.log("");
+        console.log("Answer10");
+        console.log("");
+
+        //Problem 10
+
+           const newArray = [2,1,4,3,5,7,8];
+           let sorted = [];
+           
+           for(let i=0;i<=newArray.length;i++){
+            for(let j=0;j<=newArray.length;j++){
+                if(newArray[j]>newArray[i]){
+                    let temp=newArray[i];
+                    newArray[i]=newArray[j];
+                    newArray[j]=temp;
+                }
+                
+            }
+            
+            
+        }
+        console.log(newArray);
+
+        //Problem 11
+
+        let string1 = "pakistan is an asian country"
+        let str="";
+        function Upper(string){
+            string=string[0].toUpperCase() + string;
+            for(let i=0;i<string.length;i++){
+                if(string[i]==" "){
+                    string=string[i+1].toUpperCase() + string[i];
+                }
+            }
+            return string;
+        }
+        console.log(string1);
+        console.log(Upper(string1));
+
+           
+          
+
