@@ -162,22 +162,21 @@ console.log("");
 console.log("Sorting Array Prolem 10");
 console.log("");
 
-const newArray = [2, 1, 4, 3, 5, 7, 8];
-console.log(newArray);
+const unsortedArray = [2, 1, 4, 3, 5, 7, 8];
+console.log(unsortedArray);
 
-let sorted = [];
 
-for (let i = 0; i <= newArray.length; i++) {
-  for (let j = 0; j <= newArray.length; j++) {
-    if (newArray[j] > newArray[i]) {
-      let temp = newArray[i];
-      newArray[i] = newArray[j];
-      newArray[j] = temp;
+for(let i=0;i<unsortedArray.length;i++){
+    for(let j=0;j<unsortedArray.length-i;j++){
+        if(unsortedArray[j]>unsortedArray[j+1]){
+            let temp=unsortedArray[j];
+            unsortedArray[j]=unsortedArray[j+1];
+            unsortedArray[j+1]=temp;
+        }
     }
-  }
 }
 
-console.log(newArray);
+console.log(unsortedArray);
 
 //Problem 11
 
