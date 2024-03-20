@@ -52,13 +52,14 @@ console.log("Reversing Problem 4");
 console.log("");
 
 //Reversing the String
-
-let string = "Hello";
-let reverse = "";
-for (i = string.length - 1; i >= 0; i--) {
-  reverse = reverse + string[i];
+function reverse(string) {
+  let reverse = "";
+  for (i = string.length - 1; i >= 0; i--) {
+    reverse = reverse + string[i];
+  }
+  return reverse;
 }
-console.log(reverse);
+console.log(reverse("Hello"));
 
 console.log("");
 console.log("Sum of Array Prolem 5");
@@ -86,7 +87,6 @@ for (let i = 0; i <= array.length - 1; i++) {
   if (temp < array[i]) {
     temp = array[i];
   }
-  temp = temp;
 }
 console.log(array);
 
@@ -106,7 +106,7 @@ function leapYear(value) {
   } else console.log("Its not a leap year");
 }
 console.log("Number is 600");
-leapYear(600);
+leapYear(2024);
 console.log("Number is 800");
 leapYear(800);
 
@@ -115,7 +115,7 @@ console.log("");
 console.log("Fianocci Series Problem 8");
 console.log("");
 
-function fibanocci(series, index) {
+function fibanocci(n) {
   if (series[index] == series[index - 1] + series[index - 2]) {
     console.log("Its a Fibanocci Series");
   } else console.log("It's not a Fibanocci Series");
@@ -165,15 +165,14 @@ console.log("");
 const unsortedArray = [2, 1, 4, 3, 5, 7, 8];
 console.log(unsortedArray);
 
-
-for(let i=0;i<unsortedArray.length;i++){
-    for(let j=0;j<unsortedArray.length-i;j++){
-        if(unsortedArray[j]>unsortedArray[j+1]){
-            let temp=unsortedArray[j];
-            unsortedArray[j]=unsortedArray[j+1];
-            unsortedArray[j+1]=temp;
-        }
+for (let i = 0; i < unsortedArray.length; i++) {
+  for (let j = 0; j < unsortedArray.length - i; j++) {
+    if (unsortedArray[j] > unsortedArray[j + 1]) {
+      let temp = unsortedArray[j];
+      unsortedArray[j] = unsortedArray[j + 1];
+      unsortedArray[j + 1] = temp;
     }
+  }
 }
 
 console.log(unsortedArray);
@@ -191,6 +190,19 @@ for (let i = 0; i < words.length; i++) {
   words[i] = words[i][0].toUpperCase() + words[i].substring(1);
 }
 console.log(words.join(" "));
+
+let sen = "";
+for (let i = 0; i < sen.length; i++) {
+  if (i === 0) {
+    sen += string1[i].toUpperCase();
+  } else {
+    if (string1[i - 1] === " ") {
+      sen += string1[i].toUpperCase();
+    } else {
+      sen += string1[i];
+    }
+  }
+}
 
 //Problem 12
 
